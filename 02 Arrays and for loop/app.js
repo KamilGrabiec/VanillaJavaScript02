@@ -21,7 +21,13 @@ function calculateTotal(arr) {
   for (let i = 0; i < arr.length; i++) {
     total += arr[i];
   }
-  return total;
+  if (total > 100) {
+    console.log(`Whoa! You are spending way too much!`);
+    return total;
+  } else {
+    console.log(`You are good, total is less than 100.`);
+    return total;
+  }
 }
 
 const gasTotal = calculateTotal(gas);
