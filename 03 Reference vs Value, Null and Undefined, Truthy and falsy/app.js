@@ -22,3 +22,53 @@ person2.name = 'suzy'; //here person1 name has also been changed because 'suzy' 
 console.log(
   `the name of first person is ${person1.name} and the name of second person is ${person2.name}`
 );
+
+// Null and Undefined (both mean "no value")
+// undefined - "javascript can not find value"
+
+// variable without initial value
+// missing function arguments
+// missing object properties
+
+// null - "developer sets the value to be no value"
+
+let number3 = 20 + null;
+console.log(number3);
+
+let number4 = 30 + undefined;
+console.log(number4);
+
+// Truthy and Falsy
+// "", '', ``, 0 -0, false, null, undefined
+
+const bool1 = true;
+const bool2 = 2 > 1;
+
+if (bool1) {
+  console.log('It work');
+}
+if (bool2) {
+  console.log('It works too!');
+}
+
+const text1 = 'Bob';
+const text2 = '';
+
+if (text1) {
+  console.log('String with value is treat as Truthy');
+}
+if (!text2) {
+  console.log('But empty sting is treated as Falsy');
+}
+
+// ternary operator
+
+const value = 1 < 0; // mean value is false
+
+value ? console.log('value is true') : console.log('value is false');
+// the same as:
+//  if(valye) {
+//    console.log('value is true')
+// } else {
+//   console.log('value is false')
+// }
