@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <! meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+      .btn {
+        font-size: 2rem;
+        background: lightgray;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title1" class="title1">Hello World</h1>
+    <h1>Hello People</h1>
+    <h2 id="title2" class="title1">Welcome back</h2>
+    <button class="btn" id="btn">click me</button>
+    <ul id="result">
+      <li class="special">apple</li>
+      <li>orange</li>
+      <li class="special">bannana</li>
+      <li class="special">pearl</li>
+      <li class="special last">tomato</li>
+      <!-- In this case, space will be translated to . so selector is special.last, special last will not be found-->
+    </ul>
+    <script src="./app.js"></script>
+  </body>
+</html>
