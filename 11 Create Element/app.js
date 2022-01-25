@@ -6,6 +6,9 @@
 
 // replaceChild('new', 'old')
 
+// prepend
+// innerText
+
 const result = document.querySelector('#result');
 
 // create empty element
@@ -57,3 +60,26 @@ smallHeading.classList.add('red');
 result.replaceChild(smallHeading, heading);
 
 console.log(result.children);
+
+console.log(`Next chapter - Prepend InnerText`);
+// prepend
+// innerText
+
+const heading7 = document.createElement('h7');
+heading7.innerText = 'Whatever text by innerText';
+document.body.prepend(heading7);
+
+const heading8 = document.createElement('h8');
+heading8.innerText = 'Header to remove \n';
+document.body.prepend(heading8);
+
+// remove
+// removeChild
+
+const elementToRemove = document.querySelector('h8');
+
+//elementToRemove.remove();
+
+const elementToRemove2 = result.querySelector('h1');
+//result.removeChild(h1);
+result.removeChild(elementToRemove2);
